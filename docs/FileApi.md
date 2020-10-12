@@ -1,4 +1,4 @@
-# openapi_client.FileApi
+# tracking_client.FileApi
 
 All URIs are relative to *http://tracking-api-service/api/v1*
 
@@ -23,20 +23,20 @@ Return a file based on a file md5sum.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FileApi(api_client)
+    api_instance = tracking_client.FileApi(api_client)
     md5sum = 'md5sum_example' # str | 
 
     try:
@@ -86,20 +86,20 @@ Return a list of files associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FileApi(api_client)
+    api_instance = tracking_client.FileApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -149,20 +149,20 @@ Delete a file with {md5sum} associated with a sample with {id}.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FileApi(api_client)
+    api_instance = tracking_client.FileApi(api_client)
     id = 'id_example' # str | 
 md5sum = 'md5sum_example' # str | 
 
@@ -213,20 +213,20 @@ Return a file with {md5sum} associated with a sample with {id}.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FileApi(api_client)
+    api_instance = tracking_client.FileApi(api_client)
     id = 'id_example' # str | 
 md5sum = 'md5sum_example' # str | 
 
@@ -278,20 +278,20 @@ Add a new file to be associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FileApi(api_client)
+    api_instance = tracking_client.FileApi(api_client)
     id = 'id_example' # str | 
 file = '/path/to/file' # File | File to be added
 

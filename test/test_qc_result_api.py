@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.qc_result_api import QcResultApi  # noqa: E501
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.api.qc_result_api import QcResultApi  # noqa: E501
+from tracking_client.rest import ApiException
 
 
 class TestQcResultApi(unittest.TestCase):
     """QcResultApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.qc_result_api.QcResultApi()  # noqa: E501
+        self.api = tracking_client.api.qc_result_api.QcResultApi()  # noqa: E501
 
     def tearDown(self):
         pass

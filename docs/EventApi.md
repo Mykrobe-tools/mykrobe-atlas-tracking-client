@@ -1,4 +1,4 @@
-# openapi_client.EventApi
+# tracking_client.EventApi
 
 All URIs are relative to *http://tracking-api-service/api/v1*
 
@@ -22,20 +22,20 @@ Delete an event with {eventId} associated with a sample with {id}.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EventApi(api_client)
+    api_instance = tracking_client.EventApi(api_client)
     id = 'id_example' # str | 
 event_id = 'event_id_example' # str | 
 
@@ -86,20 +86,20 @@ Return an event with {eventId} associated with a sample with {id}.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EventApi(api_client)
+    api_instance = tracking_client.EventApi(api_client)
     id = 'id_example' # str | 
 event_id = 'event_id_example' # str | 
 
@@ -151,20 +151,20 @@ Return a list of events associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EventApi(api_client)
+    api_instance = tracking_client.EventApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -214,22 +214,22 @@ Add a new event to be associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EventApi(api_client)
+    api_instance = tracking_client.EventApi(api_client)
     id = 'id_example' # str | 
-event = openapi_client.Event() # Event | Event to be added
+event = tracking_client.Event() # Event | Event to be added
 
     try:
         api_response = api_instance.samples_id_events_post(id, event)

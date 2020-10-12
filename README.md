@@ -1,4 +1,4 @@
-# openapi-client
+# tracking_client
 <p>An API for CRUD of sample tracking information for Mykrobe Atlas project
 <p>This API is intended to satisfy the following user stories <li> Atlas user wants to know the sample status so that I can know if specific results are available <li> Atlas user wants to know QC results for a sample so that I can know if a specific sample has passed QC check <li> Atlas user wants to deprecate a sample so that it is no longer available from the Atlas system <li> sample ingestion service wants to know if a sample already exists so that I can decide on rejecting a sample <li> sample ingestion service wants to know if a file already exists so that I can know if this is a new file <li> sample ingestion service wants to add a new sample for tracking so that It can know if the sample is accepted <li> sample processing service wants to add a processing event for a new sample so that the sample can be auditted <li> sampel processing service wants to add QC results for a new sample so that other user can know if the new sample passes the QC check <li> sampel processing service wants to update sample status so that they are up to date <li> sampel processing service wants to update sample's QC results so that they are up to date <li> audit user wants to know all the processing events for a sample so that I can know what happened to a sample
 
@@ -24,7 +24,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openapi_client
+import tracking_client
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import tracking_client
 ```
 
 ## Getting Started
@@ -49,22 +49,22 @@ Please follow the [installation procedure](#installation--usage) and then run th
 from __future__ import print_function
 
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with tracking_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EventApi(api_client)
+    api_instance = tracking_client.EventApi(api_client)
     id = 'id_example' # str | 
 event_id = 'event_id_example' # str | 
 

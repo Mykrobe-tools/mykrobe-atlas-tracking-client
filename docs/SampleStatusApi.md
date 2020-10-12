@@ -1,4 +1,4 @@
-# openapi_client.SampleStatusApi
+# tracking_client.SampleStatusApi
 
 All URIs are relative to *http://tracking-api-service/api/v1*
 
@@ -22,20 +22,20 @@ Delete the status associated with a sample with {id}.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleStatusApi(api_client)
+    api_instance = tracking_client.SampleStatusApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -84,20 +84,20 @@ Return the status associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleStatusApi(api_client)
+    api_instance = tracking_client.SampleStatusApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -147,22 +147,22 @@ Update status associated with a sample with new data.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleStatusApi(api_client)
+    api_instance = tracking_client.SampleStatusApi(api_client)
     id = 'id_example' # str | 
-status = openapi_client.Status() # Status | Status to be added
+status = tracking_client.Status() # Status | Status to be added
 
     try:
         api_response = api_instance.samples_id_status_patch(id, status)
@@ -212,22 +212,22 @@ Add or replace new status associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleStatusApi(api_client)
+    api_instance = tracking_client.SampleStatusApi(api_client)
     id = 'id_example' # str | 
-status = openapi_client.Status() # Status | Status to be added.
+status = tracking_client.Status() # Status | Status to be added.
 
     try:
         api_response = api_instance.samples_id_status_put(id, status)

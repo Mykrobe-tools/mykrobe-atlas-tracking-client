@@ -1,4 +1,4 @@
-# openapi_client.SampleApi
+# tracking_client.SampleApi
 
 All URIs are relative to *http://tracking-api-service/api/v1*
 
@@ -21,20 +21,20 @@ Return a sample by its ID.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleApi(api_client)
+    api_instance = tracking_client.SampleApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -84,20 +84,20 @@ Return if a sample with {id} exists.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleApi(api_client)
+    api_instance = tracking_client.SampleApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -146,21 +146,21 @@ Add a new sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SampleApi(api_client)
-    sample = openapi_client.Sample() # Sample | Sample to be added
+    api_instance = tracking_client.SampleApi(api_client)
+    sample = tracking_client.Sample() # Sample | Sample to be added
 
     try:
         api_response = api_instance.samples_post(sample)

@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.sample_status_api import SampleStatusApi  # noqa: E501
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.api.sample_status_api import SampleStatusApi  # noqa: E501
+from tracking_client.rest import ApiException
 
 
 class TestSampleStatusApi(unittest.TestCase):
     """SampleStatusApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.sample_status_api.SampleStatusApi()  # noqa: E501
+        self.api = tracking_client.api.sample_status_api.SampleStatusApi()  # noqa: E501
 
     def tearDown(self):
         pass

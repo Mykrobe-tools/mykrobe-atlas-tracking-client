@@ -1,4 +1,4 @@
-# openapi_client.QcResultApi
+# tracking_client.QcResultApi
 
 All URIs are relative to *http://tracking-api-service/api/v1*
 
@@ -21,20 +21,20 @@ Delete the QC result associated with a sample with {id}.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.QcResultApi(api_client)
+    api_instance = tracking_client.QcResultApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -83,20 +83,20 @@ Return the QC result associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.QcResultApi(api_client)
+    api_instance = tracking_client.QcResultApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -146,22 +146,22 @@ Add or replace new QC result associated with a sample.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import tracking_client
+from tracking_client.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to http://tracking-api-service/api/v1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = tracking_client.Configuration(
     host = "http://tracking-api-service/api/v1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with tracking_client.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.QcResultApi(api_client)
+    api_instance = tracking_client.QcResultApi(api_client)
     id = 'id_example' # str | 
-qc_result = openapi_client.QcResult() # QcResult | QC result to be added
+qc_result = tracking_client.QcResult() # QcResult | QC result to be added
 
     try:
         api_response = api_instance.samples_id_qc_result_put(id, qc_result)
