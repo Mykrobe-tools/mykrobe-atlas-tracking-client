@@ -93,8 +93,10 @@ Class | Method | HTTP request | Description
 *QcResultApi* | [**samples_id_qc_result_delete**](docs/QcResultApi.md#samples_id_qc_result_delete) | **DELETE** /samples/{id}/qc-result | 
 *QcResultApi* | [**samples_id_qc_result_get**](docs/QcResultApi.md#samples_id_qc_result_get) | **GET** /samples/{id}/qc-result | 
 *QcResultApi* | [**samples_id_qc_result_put**](docs/QcResultApi.md#samples_id_qc_result_put) | **PUT** /samples/{id}/qc-result | 
+*SampleApi* | [**samples_get**](docs/SampleApi.md#samples_get) | **GET** /samples | 
 *SampleApi* | [**samples_id_get**](docs/SampleApi.md#samples_id_get) | **GET** /samples/{id} | 
 *SampleApi* | [**samples_id_head**](docs/SampleApi.md#samples_id_head) | **HEAD** /samples/{id} | 
+*SampleApi* | [**samples_id_patch**](docs/SampleApi.md#samples_id_patch) | **PATCH** /samples/{id} | 
 *SampleApi* | [**samples_post**](docs/SampleApi.md#samples_post) | **POST** /samples | 
 *SampleStatusApi* | [**samples_id_status_delete**](docs/SampleStatusApi.md#samples_id_status_delete) | **DELETE** /samples/{id}/status | 
 *SampleStatusApi* | [**samples_id_status_get**](docs/SampleStatusApi.md#samples_id_status_get) | **GET** /samples/{id}/status | 
