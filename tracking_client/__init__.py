@@ -39,3 +39,5 @@ from tracking_client.models.qc_result import QcResult
 from tracking_client.models.sample import Sample
 from tracking_client.models.status import Status
 
+from tracking_client.models.validated.event import ValidatedEvent
+
